@@ -84,9 +84,8 @@ def prase_args():
     parser = argparse.ArgumentParser(
                     prog='bldd.py',
                     description="""Backward ldd: shows all elf executable 
-                    files that use specified shared library files.""",
+                    files that use specified shared library files."""
                     )
-    #epilog='Text at the bottom of help'
     parser.add_argument("-o <file>","--output_file",type=str,default=OUTFILE_NAME,
                         help="Place the output into <file>. Default value is <report.txt>")
     parser.add_argument("-p <path>","--path",type=valid_path,default=os.getcwd(),
